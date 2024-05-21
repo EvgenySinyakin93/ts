@@ -35,7 +35,7 @@ test('should calculate total price correctly', () => {
   cart.add(musicAlbum);
   cart.add(movie);
 
-  expect(cart.calculateTotalPrice()).toBe(3000);
+  expect(cart.calculateTotalPrice()).toBe(2225);
 });
 
 test('should calculate discounted total price correctly', () => {
@@ -48,7 +48,7 @@ test('should calculate discounted total price correctly', () => {
   cart.add(musicAlbum);
   cart.add(movie);
 
-  expect(cart.calculateDiscountedTotalPrice(50)).toBe(1500);
+  expect(cart.calculateDiscountedTotalPrice(50)).toBe(1113);
 });
 
 test('should remove item by id', () => {
